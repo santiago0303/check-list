@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".Frm">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btGrd"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#153250"
+        android:onClick="guardar"
+        android:text="Guardar"
+        android:verticalScrollbarPosition="right"
+        app:icon="@drawable/save_file_removebg_preview"
+        app:iconSize="18dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="Estado" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#01949A"
+            android:baselineAligned="false"
+            android:onClick="completar"
+            android:text="Completar" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spnId"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <Button
+        android:id="@+id/btMtr"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#153250"
+        android:onClick="mostrar"
+        android:text="Mostrar"
+        app:icon="@drawable/r_removebg_preview"
+        app:iconPadding="8dp"
+        app:iconSize="20dp"
+        app:iconTintMode="src_in" />
+
+    <Button
+        android:id="@+id/btAct"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#153250"
+        android:onClick="actualizar"
+        android:text="Actualizar"
+        app:icon="@drawable/r__1__removebg_preview" />
+
+    <Button
+        android:id="@+id/btList"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#153250"
+        android:onClick="listar"
+        android:text="Listar Todos"
+        app:icon="@drawable/list_png_image" />
+
+    <Button
+        android:id="@+id/btElim"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#DB1F48"
+        android:onClick="eliminar"
+        android:text="Eliminar"
+        app:icon="@drawable/r__2__removebg_preview"
+        app:iconSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="327dp"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/gradient" />
+
+</LinearLayout>

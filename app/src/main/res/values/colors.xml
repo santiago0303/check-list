@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPendienteBackground">#FF0000</color>     <!-- Rojo -->
+    <color name="colorActualizadoBackground">#FFFF00</color>  <!-- Amarillo -->
+    <color name="colorCompletadoBackground">#00FF00</color>  <!-- Verde -->
+    <color name="colorPendienteText">#FFFFFF</color>          <!-- Texto blanco -->
+    <color name="colorActualizadoText">#000000</color>        <!-- Texto negro -->
+    <color name="colorCompletadoText">#000000</color>        <!-- Texto negro -->
+
+</resources>
+
